@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace P3_2_1184064
+namespace P3_3_1184064
 {
     internal static class Program
     {
@@ -16,7 +16,7 @@ namespace P3_2_1184064
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ParentForm());
+            Application.Run(new Form1());
         }
     }
 }

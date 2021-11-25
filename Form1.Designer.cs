@@ -1,4 +1,4 @@
-﻿namespace P3_1_1184064
+﻿namespace P3_3_1184064
 {
     partial class Form1
     {
@@ -28,55 +28,222 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.OutputLabel = new System.Windows.Forms.Label();
-            this.HelloButton = new System.Windows.Forms.Label();
-            this.ExitButton = new System.Windows.Forms.Label();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            this.label1 = new System.Windows.Forms.Label();
+            this.rbMonitor = new System.Windows.Forms.RadioButton();
+            this.rbKeyboard = new System.Windows.Forms.RadioButton();
+            this.rbMouse = new System.Windows.Forms.RadioButton();
+            this.rbPrinter = new System.Windows.Forms.RadioButton();
+            this.rbScanner = new System.Windows.Forms.RadioButton();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.tsGambar = new System.Windows.Forms.ToolStrip();
+            this.tsbMouse = new System.Windows.Forms.ToolStripButton();
+            this.tsbMonitor = new System.Windows.Forms.ToolStripButton();
+            this.tsbPrinter = new System.Windows.Forms.ToolStripButton();
+            this.tsbKeyboard = new System.Windows.Forms.ToolStripButton();
+            this.tsbScanner = new System.Windows.Forms.ToolStripButton();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.tslKetGambar = new System.Windows.Forms.ToolStripStatusLabel();
+            this.groupBox1.SuspendLayout();
+            this.tsGambar.SuspendLayout();
+            this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // OutputLabel
+            // label1
             // 
-            this.OutputLabel.AutoSize = true;
-            this.OutputLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.OutputLabel.Font = new System.Drawing.Font("Trebuchet MS", 9.818182F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.OutputLabel.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.OutputLabel.Location = new System.Drawing.Point(14, 30);
-            this.OutputLabel.Name = "OutputLabel";
-            this.OutputLabel.Size = new System.Drawing.Size(2, 22);
-            this.OutputLabel.TabIndex = 0;
-            this.OutputLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Tahoma", 9.163636F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(12, 20);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(289, 17);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Pilih salah satu item berikut dan klik pada";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // HelloButton
+            // rbMonitor
             // 
-            this.HelloButton.AutoSize = true;
-            this.HelloButton.Location = new System.Drawing.Point(57, 87);
-            this.HelloButton.Name = "HelloButton";
-            this.HelloButton.Size = new System.Drawing.Size(49, 13);
-            this.HelloButton.TabIndex = 1;
-            this.HelloButton.Text = "&SayHello";
-            this.HelloButton.Click += new System.EventHandler(this.HelloButton_Click);
+            this.rbMonitor.AutoSize = true;
+            this.rbMonitor.Checked = true;
+            this.rbMonitor.Location = new System.Drawing.Point(20, 23);
+            this.rbMonitor.Name = "rbMonitor";
+            this.rbMonitor.Size = new System.Drawing.Size(73, 21);
+            this.rbMonitor.TabIndex = 1;
+            this.rbMonitor.TabStop = true;
+            this.rbMonitor.Text = "Monitor";
+            this.rbMonitor.UseVisualStyleBackColor = true;
             // 
-            // ExitButton
+            // rbKeyboard
             // 
-            this.ExitButton.AutoSize = true;
-            this.ExitButton.Location = new System.Drawing.Point(161, 87);
-            this.ExitButton.Name = "ExitButton";
-            this.ExitButton.Size = new System.Drawing.Size(24, 13);
-            this.ExitButton.TabIndex = 2;
-            this.ExitButton.Text = "E&xit";
-            this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
+            this.rbKeyboard.AutoSize = true;
+            this.rbKeyboard.Location = new System.Drawing.Point(20, 61);
+            this.rbKeyboard.Name = "rbKeyboard";
+            this.rbKeyboard.Size = new System.Drawing.Size(87, 21);
+            this.rbKeyboard.TabIndex = 2;
+            this.rbKeyboard.Text = "Keyboard";
+            this.rbKeyboard.UseVisualStyleBackColor = true;
+            // 
+            // rbMouse
+            // 
+            this.rbMouse.AutoSize = true;
+            this.rbMouse.Location = new System.Drawing.Point(20, 100);
+            this.rbMouse.Name = "rbMouse";
+            this.rbMouse.Size = new System.Drawing.Size(68, 21);
+            this.rbMouse.TabIndex = 3;
+            this.rbMouse.Text = "Mouse";
+            this.rbMouse.UseVisualStyleBackColor = true;
+            this.rbMouse.CheckedChanged += new System.EventHandler(this.rbMouse_CheckedChanged);
+            // 
+            // rbPrinter
+            // 
+            this.rbPrinter.AutoSize = true;
+            this.rbPrinter.Location = new System.Drawing.Point(20, 147);
+            this.rbPrinter.Name = "rbPrinter";
+            this.rbPrinter.Size = new System.Drawing.Size(68, 21);
+            this.rbPrinter.TabIndex = 4;
+            this.rbPrinter.Text = "Printer";
+            this.rbPrinter.UseVisualStyleBackColor = true;
+            // 
+            // rbScanner
+            // 
+            this.rbScanner.AutoSize = true;
+            this.rbScanner.Location = new System.Drawing.Point(20, 174);
+            this.rbScanner.Name = "rbScanner";
+            this.rbScanner.Size = new System.Drawing.Size(79, 21);
+            this.rbScanner.TabIndex = 5;
+            this.rbScanner.Text = "Scanner";
+            this.rbScanner.UseVisualStyleBackColor = true;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.rbMonitor);
+            this.groupBox1.Controls.Add(this.rbScanner);
+            this.groupBox1.Controls.Add(this.rbKeyboard);
+            this.groupBox1.Controls.Add(this.rbPrinter);
+            this.groupBox1.Controls.Add(this.rbMouse);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.163636F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(45, 80);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(175, 220);
+            this.groupBox1.TabIndex = 6;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Nama Gambar ";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // tsGambar
+            // 
+            this.tsGambar.AutoSize = false;
+            this.tsGambar.Dock = System.Windows.Forms.DockStyle.None;
+            this.tsGambar.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
+            this.tsGambar.ImageScalingSize = new System.Drawing.Size(18, 18);
+            this.tsGambar.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsbMouse,
+            this.tsbMonitor,
+            this.tsbPrinter,
+            this.tsbKeyboard,
+            this.tsbScanner});
+            this.tsGambar.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.VerticalStackWithOverflow;
+            this.tsGambar.Location = new System.Drawing.Point(223, 37);
+            this.tsGambar.Name = "tsGambar";
+            this.tsGambar.Size = new System.Drawing.Size(220, 343);
+            this.tsGambar.TabIndex = 7;
+            this.tsGambar.Text = "toolStrip1";
+            // 
+            // tsbMouse
+            // 
+            this.tsbMouse.AutoSize = false;
+            this.tsbMouse.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tsbMouse.Image = ((System.Drawing.Image)(resources.GetObject("tsbMouse.Image")));
+            this.tsbMouse.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbMouse.Name = "tsbMouse";
+            this.tsbMouse.Size = new System.Drawing.Size(60, 60);
+            this.tsbMouse.Tag = "Mouse";
+            this.tsbMouse.Text = "Mouse";
+            this.tsbMouse.Click += new System.EventHandler(this.tsbMouse_Click);
+            // 
+            // tsbMonitor
+            // 
+            this.tsbMonitor.AutoSize = false;
+            this.tsbMonitor.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tsbMonitor.Image = ((System.Drawing.Image)(resources.GetObject("tsbMonitor.Image")));
+            this.tsbMonitor.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbMonitor.Name = "tsbMonitor";
+            this.tsbMonitor.Size = new System.Drawing.Size(60, 60);
+            this.tsbMonitor.Tag = "Monitor";
+            this.tsbMonitor.Text = "Monitor";
+            this.tsbMonitor.Click += new System.EventHandler(this.tsbMonitor_Click);
+            // 
+            // tsbPrinter
+            // 
+            this.tsbPrinter.AutoSize = false;
+            this.tsbPrinter.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tsbPrinter.Image = ((System.Drawing.Image)(resources.GetObject("tsbPrinter.Image")));
+            this.tsbPrinter.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbPrinter.Name = "tsbPrinter";
+            this.tsbPrinter.Size = new System.Drawing.Size(60, 60);
+            this.tsbPrinter.Tag = "Printer";
+            this.tsbPrinter.Text = "Printer";
+            this.tsbPrinter.Click += new System.EventHandler(this.tsbPrinter_Click);
+            // 
+            // tsbKeyboard
+            // 
+            this.tsbKeyboard.AutoSize = false;
+            this.tsbKeyboard.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tsbKeyboard.Image = ((System.Drawing.Image)(resources.GetObject("tsbKeyboard.Image")));
+            this.tsbKeyboard.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbKeyboard.Name = "tsbKeyboard";
+            this.tsbKeyboard.Size = new System.Drawing.Size(60, 60);
+            this.tsbKeyboard.Tag = "Keyboard";
+            this.tsbKeyboard.Text = "Keyboard";
+            this.tsbKeyboard.Click += new System.EventHandler(this.tsbKeyboard_Click);
+            // 
+            // tsbScanner
+            // 
+            this.tsbScanner.AutoSize = false;
+            this.tsbScanner.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tsbScanner.Image = ((System.Drawing.Image)(resources.GetObject("tsbScanner.Image")));
+            this.tsbScanner.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbScanner.Name = "tsbScanner";
+            this.tsbScanner.Size = new System.Drawing.Size(60, 60);
+            this.tsbScanner.Tag = "Scanner";
+            this.tsbScanner.Text = "Scanner";
+            this.tsbScanner.Click += new System.EventHandler(this.tsbScanner_Click);
+            // 
+            // statusStrip1
+            // 
+            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(18, 18);
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tslKetGambar});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 404);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(452, 22);
+            this.statusStrip1.TabIndex = 8;
+            this.statusStrip1.Text = "statusStrip1";
+            // 
+            // tslKetGambar
+            // 
+            this.tslKetGambar.Font = new System.Drawing.Font("Segoe UI Semibold", 11.78182F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tslKetGambar.ForeColor = System.Drawing.Color.Red;
+            this.tslKetGambar.Name = "tslKetGambar";
+            this.tslKetGambar.Size = new System.Drawing.Size(0, 17);
+            this.tslKetGambar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Pink;
-            this.ClientSize = new System.Drawing.Size(282, 131);
-            this.Controls.Add(this.ExitButton);
-            this.Controls.Add(this.HelloButton);
-            this.Controls.Add(this.OutputLabel);
+            this.ClientSize = new System.Drawing.Size(452, 426);
+            this.Controls.Add(this.statusStrip1);
+            this.Controls.Add(this.tsGambar);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.label1);
             this.Name = "Form1";
-            this.Text = "From Hello";
-            this.Click += new System.EventHandler(this.Form1_Click);
+            this.Text = "Percobaan1_saya";
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.tsGambar.ResumeLayout(false);
+            this.tsGambar.PerformLayout();
+            this.statusStrip1.ResumeLayout(false);
+            this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -84,9 +251,21 @@
 
         #endregion
 
-        private System.Windows.Forms.Label OutputLabel;
-        private System.Windows.Forms.Label HelloButton;
-        private System.Windows.Forms.Label ExitButton;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.RadioButton rbMonitor;
+        private System.Windows.Forms.RadioButton rbKeyboard;
+        private System.Windows.Forms.RadioButton rbMouse;
+        private System.Windows.Forms.RadioButton rbPrinter;
+        private System.Windows.Forms.RadioButton rbScanner;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.ToolStrip tsGambar;
+        private System.Windows.Forms.ToolStripButton tsbMouse;
+        private System.Windows.Forms.ToolStripButton tsbMonitor;
+        private System.Windows.Forms.ToolStripButton tsbPrinter;
+        private System.Windows.Forms.ToolStripButton tsbKeyboard;
+        private System.Windows.Forms.ToolStripButton tsbScanner;
+        private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.ToolStripStatusLabel tslKetGambar;
     }
 }
 

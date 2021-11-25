@@ -1,4 +1,4 @@
-﻿namespace P3_3_1184064
+﻿namespace P3_4_1184064
 {
     partial class Form1
     {
@@ -28,222 +28,298 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.label1 = new System.Windows.Forms.Label();
-            this.rbMonitor = new System.Windows.Forms.RadioButton();
-            this.rbKeyboard = new System.Windows.Forms.RadioButton();
-            this.rbMouse = new System.Windows.Forms.RadioButton();
-            this.rbPrinter = new System.Windows.Forms.RadioButton();
-            this.rbScanner = new System.Windows.Forms.RadioButton();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.tsGambar = new System.Windows.Forms.ToolStrip();
-            this.tsbMouse = new System.Windows.Forms.ToolStripButton();
-            this.tsbMonitor = new System.Windows.Forms.ToolStripButton();
-            this.tsbPrinter = new System.Windows.Forms.ToolStripButton();
-            this.tsbKeyboard = new System.Windows.Forms.ToolStripButton();
-            this.tsbScanner = new System.Windows.Forms.ToolStripButton();
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.tslKetGambar = new System.Windows.Forms.ToolStripStatusLabel();
-            this.groupBox1.SuspendLayout();
-            this.tsGambar.SuspendLayout();
-            this.statusStrip1.SuspendLayout();
+            this.Nama = new System.Windows.Forms.Label();
+            this.JenisKelamin = new System.Windows.Forms.Label();
+            this.tgl = new System.Windows.Forms.Label();
+            this.BOXNAMA = new System.Windows.Forms.TextBox();
+            this.Pilihkelamin = new System.Windows.Forms.ComboBox();
+            this.TGLL = new System.Windows.Forms.DateTimePicker();
+            this.kelas = new System.Windows.Forms.GroupBox();
+            this.Biola = new System.Windows.Forms.CheckBox();
+            this.Gitar = new System.Windows.Forms.CheckBox();
+            this.DJ = new System.Windows.Forms.CheckBox();
+            this.Piano = new System.Windows.Forms.CheckBox();
+            this.Vokal = new System.Windows.Forms.CheckBox();
+            this.Drum = new System.Windows.Forms.CheckBox();
+            this.PILIHJADWAL = new System.Windows.Forms.GroupBox();
+            this.Senin = new System.Windows.Forms.RadioButton();
+            this.Selasa = new System.Windows.Forms.RadioButton();
+            this.Sabtu = new System.Windows.Forms.RadioButton();
+            this.Rabu = new System.Windows.Forms.RadioButton();
+            this.Jumat = new System.Windows.Forms.RadioButton();
+            this.Kamis = new System.Windows.Forms.RadioButton();
+            this.Tampilkan = new System.Windows.Forms.Button();
+            this.Selesai = new System.Windows.Forms.Button();
+            this.FromPendaftaran = new System.Windows.Forms.Label();
+            this.kelas.SuspendLayout();
+            this.PILIHJADWAL.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label1
+            // Nama
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Tahoma", 9.163636F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 20);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(289, 17);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Pilih salah satu item berikut dan klik pada";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.Nama.AutoSize = true;
+            this.Nama.Location = new System.Drawing.Point(302, 62);
+            this.Nama.Name = "Nama";
+            this.Nama.Size = new System.Drawing.Size(35, 13);
+            this.Nama.TabIndex = 0;
+            this.Nama.Text = "Nama";
             // 
-            // rbMonitor
+            // JenisKelamin
             // 
-            this.rbMonitor.AutoSize = true;
-            this.rbMonitor.Checked = true;
-            this.rbMonitor.Location = new System.Drawing.Point(20, 23);
-            this.rbMonitor.Name = "rbMonitor";
-            this.rbMonitor.Size = new System.Drawing.Size(73, 21);
-            this.rbMonitor.TabIndex = 1;
-            this.rbMonitor.TabStop = true;
-            this.rbMonitor.Text = "Monitor";
-            this.rbMonitor.UseVisualStyleBackColor = true;
+            this.JenisKelamin.AutoSize = true;
+            this.JenisKelamin.Location = new System.Drawing.Point(302, 91);
+            this.JenisKelamin.Name = "JenisKelamin";
+            this.JenisKelamin.Size = new System.Drawing.Size(71, 13);
+            this.JenisKelamin.TabIndex = 1;
+            this.JenisKelamin.Text = "Jenis Kelamin";
             // 
-            // rbKeyboard
+            // tgl
             // 
-            this.rbKeyboard.AutoSize = true;
-            this.rbKeyboard.Location = new System.Drawing.Point(20, 61);
-            this.rbKeyboard.Name = "rbKeyboard";
-            this.rbKeyboard.Size = new System.Drawing.Size(87, 21);
-            this.rbKeyboard.TabIndex = 2;
-            this.rbKeyboard.Text = "Keyboard";
-            this.rbKeyboard.UseVisualStyleBackColor = true;
+            this.tgl.AutoSize = true;
+            this.tgl.Location = new System.Drawing.Point(302, 121);
+            this.tgl.Name = "tgl";
+            this.tgl.Size = new System.Drawing.Size(72, 13);
+            this.tgl.TabIndex = 2;
+            this.tgl.Text = "Tanggal Lahir";
             // 
-            // rbMouse
+            // BOXNAMA
             // 
-            this.rbMouse.AutoSize = true;
-            this.rbMouse.Location = new System.Drawing.Point(20, 100);
-            this.rbMouse.Name = "rbMouse";
-            this.rbMouse.Size = new System.Drawing.Size(68, 21);
-            this.rbMouse.TabIndex = 3;
-            this.rbMouse.Text = "Mouse";
-            this.rbMouse.UseVisualStyleBackColor = true;
-            this.rbMouse.CheckedChanged += new System.EventHandler(this.rbMouse_CheckedChanged);
+            this.BOXNAMA.Location = new System.Drawing.Point(393, 62);
+            this.BOXNAMA.Name = "BOXNAMA";
+            this.BOXNAMA.Size = new System.Drawing.Size(200, 20);
+            this.BOXNAMA.TabIndex = 3;
             // 
-            // rbPrinter
+            // Pilihkelamin
             // 
-            this.rbPrinter.AutoSize = true;
-            this.rbPrinter.Location = new System.Drawing.Point(20, 147);
-            this.rbPrinter.Name = "rbPrinter";
-            this.rbPrinter.Size = new System.Drawing.Size(68, 21);
-            this.rbPrinter.TabIndex = 4;
-            this.rbPrinter.Text = "Printer";
-            this.rbPrinter.UseVisualStyleBackColor = true;
+            this.Pilihkelamin.FormattingEnabled = true;
+            this.Pilihkelamin.Items.AddRange(new object[] {
+            "LAKI LAKI",
+            "PEREMPUAN"});
+            this.Pilihkelamin.Location = new System.Drawing.Point(393, 88);
+            this.Pilihkelamin.Name = "Pilihkelamin";
+            this.Pilihkelamin.Size = new System.Drawing.Size(200, 21);
+            this.Pilihkelamin.TabIndex = 4;
+            this.Pilihkelamin.Text = "Jenis Kelamin";
             // 
-            // rbScanner
+            // TGLL
             // 
-            this.rbScanner.AutoSize = true;
-            this.rbScanner.Location = new System.Drawing.Point(20, 174);
-            this.rbScanner.Name = "rbScanner";
-            this.rbScanner.Size = new System.Drawing.Size(79, 21);
-            this.rbScanner.TabIndex = 5;
-            this.rbScanner.Text = "Scanner";
-            this.rbScanner.UseVisualStyleBackColor = true;
+            this.TGLL.Location = new System.Drawing.Point(393, 115);
+            this.TGLL.Name = "TGLL";
+            this.TGLL.Size = new System.Drawing.Size(200, 20);
+            this.TGLL.TabIndex = 5;
             // 
-            // groupBox1
+            // kelas
             // 
-            this.groupBox1.Controls.Add(this.rbMonitor);
-            this.groupBox1.Controls.Add(this.rbScanner);
-            this.groupBox1.Controls.Add(this.rbKeyboard);
-            this.groupBox1.Controls.Add(this.rbPrinter);
-            this.groupBox1.Controls.Add(this.rbMouse);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.163636F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(45, 80);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(175, 220);
-            this.groupBox1.TabIndex = 6;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Nama Gambar ";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            this.kelas.Controls.Add(this.Biola);
+            this.kelas.Controls.Add(this.Gitar);
+            this.kelas.Controls.Add(this.DJ);
+            this.kelas.Controls.Add(this.Piano);
+            this.kelas.Controls.Add(this.Vokal);
+            this.kelas.Controls.Add(this.Drum);
+            this.kelas.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.854546F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kelas.Location = new System.Drawing.Point(92, 185);
+            this.kelas.Name = "kelas";
+            this.kelas.Size = new System.Drawing.Size(224, 121);
+            this.kelas.TabIndex = 6;
+            this.kelas.TabStop = false;
+            this.kelas.Text = "PILIHAN KELAS";
             // 
-            // tsGambar
+            // Biola
             // 
-            this.tsGambar.AutoSize = false;
-            this.tsGambar.Dock = System.Windows.Forms.DockStyle.None;
-            this.tsGambar.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
-            this.tsGambar.ImageScalingSize = new System.Drawing.Size(18, 18);
-            this.tsGambar.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tsbMouse,
-            this.tsbMonitor,
-            this.tsbPrinter,
-            this.tsbKeyboard,
-            this.tsbScanner});
-            this.tsGambar.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.VerticalStackWithOverflow;
-            this.tsGambar.Location = new System.Drawing.Point(223, 37);
-            this.tsGambar.Name = "tsGambar";
-            this.tsGambar.Size = new System.Drawing.Size(220, 343);
-            this.tsGambar.TabIndex = 7;
-            this.tsGambar.Text = "toolStrip1";
+            this.Biola.AutoSize = true;
+            this.Biola.Location = new System.Drawing.Point(6, 24);
+            this.Biola.Name = "Biola";
+            this.Biola.Size = new System.Drawing.Size(62, 20);
+            this.Biola.TabIndex = 14;
+            this.Biola.Tag = "";
+            this.Biola.Text = "Biola";
+            this.Biola.UseVisualStyleBackColor = true;
             // 
-            // tsbMouse
+            // Gitar
             // 
-            this.tsbMouse.AutoSize = false;
-            this.tsbMouse.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tsbMouse.Image = ((System.Drawing.Image)(resources.GetObject("tsbMouse.Image")));
-            this.tsbMouse.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsbMouse.Name = "tsbMouse";
-            this.tsbMouse.Size = new System.Drawing.Size(60, 60);
-            this.tsbMouse.Tag = "Mouse";
-            this.tsbMouse.Text = "Mouse";
-            this.tsbMouse.Click += new System.EventHandler(this.tsbMouse_Click);
+            this.Gitar.AutoSize = true;
+            this.Gitar.Location = new System.Drawing.Point(6, 47);
+            this.Gitar.Name = "Gitar";
+            this.Gitar.Size = new System.Drawing.Size(59, 20);
+            this.Gitar.TabIndex = 15;
+            this.Gitar.Text = "Gitar";
+            this.Gitar.UseVisualStyleBackColor = true;
             // 
-            // tsbMonitor
+            // DJ
             // 
-            this.tsbMonitor.AutoSize = false;
-            this.tsbMonitor.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tsbMonitor.Image = ((System.Drawing.Image)(resources.GetObject("tsbMonitor.Image")));
-            this.tsbMonitor.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsbMonitor.Name = "tsbMonitor";
-            this.tsbMonitor.Size = new System.Drawing.Size(60, 60);
-            this.tsbMonitor.Tag = "Monitor";
-            this.tsbMonitor.Text = "Monitor";
-            this.tsbMonitor.Click += new System.EventHandler(this.tsbMonitor_Click);
+            this.DJ.AutoSize = true;
+            this.DJ.Location = new System.Drawing.Point(134, 70);
+            this.DJ.Name = "DJ";
+            this.DJ.Size = new System.Drawing.Size(45, 20);
+            this.DJ.TabIndex = 19;
+            this.DJ.Text = "DJ";
+            this.DJ.UseVisualStyleBackColor = true;
             // 
-            // tsbPrinter
+            // Piano
             // 
-            this.tsbPrinter.AutoSize = false;
-            this.tsbPrinter.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tsbPrinter.Image = ((System.Drawing.Image)(resources.GetObject("tsbPrinter.Image")));
-            this.tsbPrinter.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsbPrinter.Name = "tsbPrinter";
-            this.tsbPrinter.Size = new System.Drawing.Size(60, 60);
-            this.tsbPrinter.Tag = "Printer";
-            this.tsbPrinter.Text = "Printer";
-            this.tsbPrinter.Click += new System.EventHandler(this.tsbPrinter_Click);
+            this.Piano.AutoSize = true;
+            this.Piano.Location = new System.Drawing.Point(6, 70);
+            this.Piano.Name = "Piano";
+            this.Piano.Size = new System.Drawing.Size(66, 20);
+            this.Piano.TabIndex = 16;
+            this.Piano.Text = "Piano";
+            this.Piano.UseVisualStyleBackColor = true;
             // 
-            // tsbKeyboard
+            // Vokal
             // 
-            this.tsbKeyboard.AutoSize = false;
-            this.tsbKeyboard.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tsbKeyboard.Image = ((System.Drawing.Image)(resources.GetObject("tsbKeyboard.Image")));
-            this.tsbKeyboard.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsbKeyboard.Name = "tsbKeyboard";
-            this.tsbKeyboard.Size = new System.Drawing.Size(60, 60);
-            this.tsbKeyboard.Tag = "Keyboard";
-            this.tsbKeyboard.Text = "Keyboard";
-            this.tsbKeyboard.Click += new System.EventHandler(this.tsbKeyboard_Click);
+            this.Vokal.AutoSize = true;
+            this.Vokal.Location = new System.Drawing.Point(134, 47);
+            this.Vokal.Name = "Vokal";
+            this.Vokal.Size = new System.Drawing.Size(66, 20);
+            this.Vokal.TabIndex = 18;
+            this.Vokal.Text = "Vokal";
+            this.Vokal.UseVisualStyleBackColor = true;
             // 
-            // tsbScanner
+            // Drum
             // 
-            this.tsbScanner.AutoSize = false;
-            this.tsbScanner.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tsbScanner.Image = ((System.Drawing.Image)(resources.GetObject("tsbScanner.Image")));
-            this.tsbScanner.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsbScanner.Name = "tsbScanner";
-            this.tsbScanner.Size = new System.Drawing.Size(60, 60);
-            this.tsbScanner.Tag = "Scanner";
-            this.tsbScanner.Text = "Scanner";
-            this.tsbScanner.Click += new System.EventHandler(this.tsbScanner_Click);
+            this.Drum.AutoSize = true;
+            this.Drum.Location = new System.Drawing.Point(134, 24);
+            this.Drum.Name = "Drum";
+            this.Drum.Size = new System.Drawing.Size(62, 20);
+            this.Drum.TabIndex = 17;
+            this.Drum.Text = "Drum";
+            this.Drum.UseVisualStyleBackColor = true;
             // 
-            // statusStrip1
+            // PILIHJADWAL
             // 
-            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(18, 18);
-            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tslKetGambar});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 404);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(452, 22);
-            this.statusStrip1.TabIndex = 8;
-            this.statusStrip1.Text = "statusStrip1";
+            this.PILIHJADWAL.Controls.Add(this.Senin);
+            this.PILIHJADWAL.Controls.Add(this.Selasa);
+            this.PILIHJADWAL.Controls.Add(this.Sabtu);
+            this.PILIHJADWAL.Controls.Add(this.Rabu);
+            this.PILIHJADWAL.Controls.Add(this.Jumat);
+            this.PILIHJADWAL.Controls.Add(this.Kamis);
+            this.PILIHJADWAL.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.854546F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PILIHJADWAL.Location = new System.Drawing.Point(540, 185);
+            this.PILIHJADWAL.Name = "PILIHJADWAL";
+            this.PILIHJADWAL.Size = new System.Drawing.Size(208, 121);
+            this.PILIHJADWAL.TabIndex = 7;
+            this.PILIHJADWAL.TabStop = false;
+            this.PILIHJADWAL.Text = "PILIHAN JADWAL";
+            this.PILIHJADWAL.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
-            // tslKetGambar
+            // Senin
             // 
-            this.tslKetGambar.Font = new System.Drawing.Font("Segoe UI Semibold", 11.78182F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tslKetGambar.ForeColor = System.Drawing.Color.Red;
-            this.tslKetGambar.Name = "tslKetGambar";
-            this.tslKetGambar.Size = new System.Drawing.Size(0, 17);
-            this.tslKetGambar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Senin.AutoSize = true;
+            this.Senin.Location = new System.Drawing.Point(0, 24);
+            this.Senin.Name = "Senin";
+            this.Senin.Size = new System.Drawing.Size(64, 20);
+            this.Senin.TabIndex = 8;
+            this.Senin.TabStop = true;
+            this.Senin.Text = "Senin";
+            this.Senin.UseVisualStyleBackColor = true;
+            this.Senin.CheckedChanged += new System.EventHandler(this.Senin_CheckedChanged);
+            // 
+            // Selasa
+            // 
+            this.Selasa.AutoSize = true;
+            this.Selasa.Location = new System.Drawing.Point(0, 47);
+            this.Selasa.Name = "Selasa";
+            this.Selasa.Size = new System.Drawing.Size(74, 20);
+            this.Selasa.TabIndex = 9;
+            this.Selasa.TabStop = true;
+            this.Selasa.Text = "Selasa";
+            this.Selasa.UseVisualStyleBackColor = true;
+            // 
+            // Sabtu
+            // 
+            this.Sabtu.AutoSize = true;
+            this.Sabtu.Location = new System.Drawing.Point(103, 69);
+            this.Sabtu.Name = "Sabtu";
+            this.Sabtu.Size = new System.Drawing.Size(65, 20);
+            this.Sabtu.TabIndex = 13;
+            this.Sabtu.TabStop = true;
+            this.Sabtu.Text = "Sabtu";
+            this.Sabtu.UseVisualStyleBackColor = true;
+            // 
+            // Rabu
+            // 
+            this.Rabu.AutoSize = true;
+            this.Rabu.Location = new System.Drawing.Point(0, 70);
+            this.Rabu.Name = "Rabu";
+            this.Rabu.Size = new System.Drawing.Size(62, 20);
+            this.Rabu.TabIndex = 11;
+            this.Rabu.TabStop = true;
+            this.Rabu.Text = "Rabu";
+            this.Rabu.UseVisualStyleBackColor = true;
+            // 
+            // Jumat
+            // 
+            this.Jumat.AutoSize = true;
+            this.Jumat.Location = new System.Drawing.Point(103, 47);
+            this.Jumat.Name = "Jumat";
+            this.Jumat.Size = new System.Drawing.Size(66, 20);
+            this.Jumat.TabIndex = 12;
+            this.Jumat.TabStop = true;
+            this.Jumat.Text = "Jumat";
+            this.Jumat.UseVisualStyleBackColor = true;
+            // 
+            // Kamis
+            // 
+            this.Kamis.AutoSize = true;
+            this.Kamis.Location = new System.Drawing.Point(103, 24);
+            this.Kamis.Name = "Kamis";
+            this.Kamis.Size = new System.Drawing.Size(67, 20);
+            this.Kamis.TabIndex = 10;
+            this.Kamis.TabStop = true;
+            this.Kamis.Text = "Kamis";
+            this.Kamis.UseVisualStyleBackColor = true;
+            // 
+            // Tampilkan
+            // 
+            this.Tampilkan.Location = new System.Drawing.Point(299, 401);
+            this.Tampilkan.Name = "Tampilkan";
+            this.Tampilkan.Size = new System.Drawing.Size(75, 23);
+            this.Tampilkan.TabIndex = 20;
+            this.Tampilkan.Text = "&Tampilkan";
+            this.Tampilkan.UseVisualStyleBackColor = true;
+            this.Tampilkan.Click += new System.EventHandler(this.Tampilkan_Click);
+            // 
+            // Selesai
+            // 
+            this.Selesai.Location = new System.Drawing.Point(418, 401);
+            this.Selesai.Name = "Selesai";
+            this.Selesai.Size = new System.Drawing.Size(75, 23);
+            this.Selesai.TabIndex = 21;
+            this.Selesai.Text = "&Selesai";
+            this.Selesai.UseVisualStyleBackColor = true;
+            this.Selesai.Click += new System.EventHandler(this.Selesai_Click);
+            // 
+            // FromPendaftaran
+            // 
+            this.FromPendaftaran.AutoSize = true;
+            this.FromPendaftaran.Location = new System.Drawing.Point(355, 9);
+            this.FromPendaftaran.Name = "FromPendaftaran";
+            this.FromPendaftaran.Size = new System.Drawing.Size(91, 13);
+            this.FromPendaftaran.TabIndex = 22;
+            this.FromPendaftaran.Text = "From Pendaftaran";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(452, 426);
-            this.Controls.Add(this.statusStrip1);
-            this.Controls.Add(this.tsGambar);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.FromPendaftaran);
+            this.Controls.Add(this.Selesai);
+            this.Controls.Add(this.Tampilkan);
+            this.Controls.Add(this.PILIHJADWAL);
+            this.Controls.Add(this.kelas);
+            this.Controls.Add(this.TGLL);
+            this.Controls.Add(this.Pilihkelamin);
+            this.Controls.Add(this.BOXNAMA);
+            this.Controls.Add(this.tgl);
+            this.Controls.Add(this.JenisKelamin);
+            this.Controls.Add(this.Nama);
             this.Name = "Form1";
-            this.Text = "Percobaan1_saya";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.tsGambar.ResumeLayout(false);
-            this.tsGambar.PerformLayout();
-            this.statusStrip1.ResumeLayout(false);
-            this.statusStrip1.PerformLayout();
+            this.Text = "Musik Dj ";
+            this.kelas.ResumeLayout(false);
+            this.kelas.PerformLayout();
+            this.PILIHJADWAL.ResumeLayout(false);
+            this.PILIHJADWAL.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -251,21 +327,29 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.RadioButton rbMonitor;
-        private System.Windows.Forms.RadioButton rbKeyboard;
-        private System.Windows.Forms.RadioButton rbMouse;
-        private System.Windows.Forms.RadioButton rbPrinter;
-        private System.Windows.Forms.RadioButton rbScanner;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.ToolStrip tsGambar;
-        private System.Windows.Forms.ToolStripButton tsbMouse;
-        private System.Windows.Forms.ToolStripButton tsbMonitor;
-        private System.Windows.Forms.ToolStripButton tsbPrinter;
-        private System.Windows.Forms.ToolStripButton tsbKeyboard;
-        private System.Windows.Forms.ToolStripButton tsbScanner;
-        private System.Windows.Forms.StatusStrip statusStrip1;
-        private System.Windows.Forms.ToolStripStatusLabel tslKetGambar;
+        private System.Windows.Forms.Label Nama;
+        private System.Windows.Forms.Label JenisKelamin;
+        private System.Windows.Forms.Label tgl;
+        private System.Windows.Forms.TextBox BOXNAMA;
+        private System.Windows.Forms.ComboBox Pilihkelamin;
+        private System.Windows.Forms.DateTimePicker TGLL;
+        private System.Windows.Forms.GroupBox kelas;
+        private System.Windows.Forms.GroupBox PILIHJADWAL;
+        private System.Windows.Forms.RadioButton Senin;
+        private System.Windows.Forms.RadioButton Selasa;
+        private System.Windows.Forms.RadioButton Kamis;
+        private System.Windows.Forms.RadioButton Rabu;
+        private System.Windows.Forms.RadioButton Jumat;
+        private System.Windows.Forms.RadioButton Sabtu;
+        private System.Windows.Forms.CheckBox Biola;
+        private System.Windows.Forms.CheckBox Gitar;
+        private System.Windows.Forms.CheckBox Piano;
+        private System.Windows.Forms.CheckBox Drum;
+        private System.Windows.Forms.CheckBox Vokal;
+        private System.Windows.Forms.CheckBox DJ;
+        private System.Windows.Forms.Button Tampilkan;
+        private System.Windows.Forms.Button Selesai;
+        private System.Windows.Forms.Label FromPendaftaran;
     }
 }
 
